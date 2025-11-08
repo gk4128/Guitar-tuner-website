@@ -1,0 +1,420 @@
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(0, 0%, 18%);
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    background-color:  white;
+    text-align: center;
+    max-width:  350px;
+    margin:auto;
+    padding: 25px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 15px hsla(0, 0%, 0%, 0.295);
+}
+
+.header{
+    width:100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(95, 8, 8);
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+main {
+    flex: 1;
+}
+footer {
+    background-color: rgb(95, 8, 8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.notebox{
+    position: relative;
+    top: 150px;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-color: grey;
+    border: 3px solid black;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.buttonstyle{
+    background-color: white;
+}
+.buttonstyleplay{
+    background-color: rgb(87, 87, 214);
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(36, 36, 88);
+    font-size: 14px;
+}
+button:hover{
+    background-color: rgb(68, 68, 175);
+}
+button:focus {
+    background-color: rgb(68, 68, 175);
+}
+input {
+  appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid black;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+}
+
+input:checked {
+  border: 6px solid black;
+}
+
+.navbar {
+    position: relative;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 2px solid black;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(73, 73, 73);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    max-height: 50px;
+}
+#u2{
+    list-style-type: none;
+    background-color: rgb(73, 73, 73);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    max-height: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+    display: flex;
+    align-items: center;
+    top: 0;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    display: block;
+    text-align: center;
+    max-width: 130px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#NavRight{
+    border-left: 2px solid black;
+}
+
+#NavLeft{
+    border-right: 2px solid black;
+}
+
+#lang{
+    color: white;
+    float: right;
+    text-decoration: none;
+    padding: 5px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: block;
+    text-align: center;
+    max-width: 130px;
+    border-left: 2px solid black;
+    border-right: 1px solid black;
+}
+.navbar img{
+    display:block;
+}
+
+.navbar a:hover{
+    background-color: rgb(41, 41, 41);
+}
+/*.Sound{
+    background: red;
+    color: white;
+    align-items: center;
+        margin: auto;
+
+}
+.SoundBlock{
+    align-items: center;
+    margin: auto;
+}
+#textBox{
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid rgba(0, 0, 0, 0.801);
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+label{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.tempBtn{
+    margin-top: 15px;
+    background-color: hsl(0, 100%, 61%);
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.SoundBtn{
+    margin-top: 15px;
+    background-color: hsl(176, 100%, 61%);
+    color: black;
+    font-size: 1.5em;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+}
+.PlayBtn{
+    margin-top: 15px;
+    background-color: hsl(201, 100%, 45%);
+    color: black;
+    font-size: 1.5em;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.tempBtn:hover{
+    background-color: hsl(0, 100%, 50%);
+}
+#result{
+    font-size: 1.75em;
+    font-weight: bold;
+}
+#countLabel{
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: Helvetica;
+}
+#btnContainer{
+    text-align: center;
+}
+.buttons{
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgb(87, 87, 214);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+.buttons:hover{
+    background-color: rgb(57, 57, 136);
+}
+#rollContainer{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+#rollLabel{
+    font-size: 2rem;
+}
+#rollButton{
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(207, 100%, 50%);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+#rollButton:hover{
+    background-color: hsl(207, 100%, 60%);
+}
+#rollButton:active{
+    background-color: hsl(207, 100%, 70%);
+}
+#numOfDice{
+    font-size: 2rem;
+    width:150px;
+    text-align: center;
+    font-weight: bold;
+}
+#diceResult{
+    margin: 25px;
+}
+#diceImages img{
+    width: 150px;
+    margin: 5px;
+}
+#clock-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+
+}
+#clock{
+    font-family: monospace;
+    font-size: 6.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    backdrop-filter: blur(5px);
+    background-color: hsla(0, 0%, 0%, 0.11);
+    width: 100%;
+}
+#stopContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border: 5px solid;
+    border-radius: 50px;
+    background-color: white;
+}
+#stopH1{
+    font-size: 4rem;
+    color: hsl(0, 0%, 25%);
+    text-align: center;
+}
+#display{
+    font-size: 5rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: hsl(0, 0%, 30%);
+    text-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.74);
+}
+#controls button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    min-width: 125px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+#startBtn{
+    background-color: hsl(120, 100%, 30%);
+}
+#startBtn:hover{
+    background-color: hsl(120, 100%, 20%);
+}
+#stopBtn{
+    background-color: hsl(199, 100%, 30%);
+}
+#stopBtn:hover{
+    background-color: hsl(199, 100%, 20%);
+}
+#resetBtnS{
+    background-color: hsl(14, 100%, 30%);
+}
+#resetBtnS:hover{
+    background-color: hsl(14, 100%, 20%);
+}
+#calculator{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+#calcDisplay{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+#keys{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+.calcBtn{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.calcBtn:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+.calcBtn:active{
+    background-color: hsl(0, 0%, 50%);
+}
+.slider{
+    position: relative;
+    width: 100%; 
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+.slider img{
+    width: 100%;
+    display: none;
+}
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color:white;
+    border: none;
+    cursor: pointer;
+}
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+@keyframes fade{
+    from {opacity: .5}
+    to {opacity: 1}
+}
